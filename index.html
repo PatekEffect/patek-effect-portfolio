@@ -1,123 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patek Effect Thumbnail Portfolio</title>
-    <style>
-        body {
-            background-color: #1a2e28; /* Brighter greenish tone */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 20px;
-            width: 90vw;
-            max-width: 1200px;
-        }
-
-        .thumbnail {
-            position: relative;
-            width: 100%;
-        }
-
-        .thumbnail img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        .thumbnail .before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            border-radius: 8px;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        .thumbnail:hover .before {
-            opacity: 1;
-        }
-
-        .thumbnail:hover .after {
-            opacity: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patek Effect Thumbnail Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="container">
-    <!-- Thumbnail 1 (Frankie - with hover effect) -->
-    <div class="thumbnail">
-        <img src="Frankie After.jpeg" class="after" alt="After Image">
-        <img src="Frankie Before.jpeg" class="before" alt="Before Image">
-    </div>
-
-    <!-- Thumbnail 2 (Daddy Issues Poster - with hover effect) -->
-    <div class="thumbnail">
-        <img src="disney.jpeg" class="after" alt="After Image">
-        <img src="ff.jpeg" class="before" alt="Before Image">
-    </div>
-
-    <!-- Thumbnail 3 (Football - with hover effect) -->
-    <div class="thumbnail">
-        <img src="After Football.JPG" class="after" alt="After Image">
-        <img src="Before Football.jpeg" class="before" alt="Before Image">
-    </div>
-
-    <!-- Regular Thumbnails -->
-    <div class="thumbnail">
-        <img src="_jBa2hPV-6A-HD.jpg" alt="Thumbnail 4">
-    </div>
-
-    <div class="thumbnail">
-        <img src="5QYmhB2AluA-HD.jpg" alt="Thumbnail 5">
-    </div>
-
-    <div class="thumbnail">
-        <img src="ehance.remini-enhanced.jpeg" alt="Thumbnail 6">
-    </div>
-
-    <div class="thumbnail">
-        <img src="FINAL.png" alt="Thumbnail 7">
-    </div>
-
-    <div class="thumbnail">
-        <img src="HOTEL'.jpeg" alt="Thumbnail 8">
-    </div>
-
-    <div class="thumbnail">
-        <img src="khpclO81Yck-HD.jpg" alt="Thumbnail 9">
-    </div>
-
-    <div class="thumbnail">
-        <img src="tm.jpeg" alt="Thumbnail 10">
-    </div>
-
-    <div class="thumbnail">
-        <img src="Untitled-1.png" alt="Thumbnail 11">
-    </div>
-
-    <div class="thumbnail">
-        <img src="zach.jpeg" alt="Thumbnail 12">
-    </div>
-
-    <div class="thumbnail">
-        <img src="another zach cray.jpeg" alt="Thumbnail 13">
-    </div>
-
-</div>
-
+  <h1>Patek Effect Thumbnail Portfolio</h1>
+  <div class="gallery">
+    <img src="aa2.jpg" alt="Thumbnail 1">
+    <img src="aa1.jpg" alt="Thumbnail 2">
+    <img src="zc1.jpeg" alt="Thumbnail 3">
+    <img src="disneybefore.jpeg" alt="Disney Before">
+    <img src="disneyafter.jpeg" alt="Disney After">
+    <img src="2before.jpeg" alt="Before Thumbnail 2">
+    <img src="1before.jpeg" alt="Before Thumbnail 1">
+    <img src="tennis.jpeg" alt="Tennis Thumbnail">
+    <img src="naked.png" alt="Naked Thumbnail">
+    <img src="zc2.jpeg" alt="Zach Thumbnail">
+    <img src="footballafter.JPG" alt="Football After">
+    <img src="haunted1.jpeg" alt="Haunted 1">
+    <img src="FINAL.png" alt="Final Thumbnail">
+    <img src="haunted2.jpeg" alt="Haunted 2">
+    <img src="haunted3.jpg" alt="Haunted 3">
+    <img src="zodiac.jpeg" alt="Zodiac Thumbnail">
+    <img src="footballbefore.jpeg" alt="Football Before">
+    <img src="beforecult.jpeg" alt="Before Cult">
+    <img src="aftercult.png" alt="After Cult">
+  </div>
 </body>
 </html>
