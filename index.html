@@ -24,15 +24,34 @@
             max-width: 1200px;
         }
 
+        .thumbnail {
+            position: relative;
+            width: 100%;
+        }
+
         .thumbnail img {
             width: 100%;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease;
+            transition: opacity 0.3s ease-in-out;
         }
 
-        .thumbnail img:hover {
-            transform: scale(1.05);
+        .thumbnail .before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .thumbnail:hover .before {
+            opacity: 1;
+        }
+
+        .thumbnail:hover .after {
+            opacity: 0;
         }
     </style>
 </head>
@@ -41,12 +60,14 @@
 <div class="container">
     <!-- Thumbnail 1 -->
     <div class="thumbnail">
-        <img src="final.png" alt="Thumbnail 1">
+        <img src="final.png" class="after" alt="After Image">
+        <img src="thumbnail 2.jpeg" class="before" alt="Before Image">
     </div>
 
     <!-- Thumbnail 2 -->
     <div class="thumbnail">
-        <img src="zodiac.png" alt="Thumbnail 2">
+        <img src="zodiac.png" class="after" alt="After Image">
+        <img src="thumbnail 2.jpeg" class="before" alt="Before Image">
     </div>
 </div>
 
