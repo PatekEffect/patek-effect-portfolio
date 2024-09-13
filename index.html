@@ -6,22 +6,10 @@
     <title>Patek Effect Thumbnail Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #111d1a;
             margin: 0;
             padding: 0;
             text-align: center;
-        }
-
-        header {
-            background-color: #132620;
-            color: #f5ebd0;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
         }
 
         .container {
@@ -29,68 +17,33 @@
             flex-wrap: wrap;
             justify-content: center;
             padding: 20px;
+            gap: 20px;
         }
 
         .thumbnail {
-            background-color: white;
-            border: 2px solid #132620;
+            width: calc(50% - 20px); /* 2 thumbnails per row */
             margin: 10px;
-            padding: 10px;
-            border-radius: 10px;
-            width: 250px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .thumbnail:hover {
-            transform: scale(1.05);
         }
 
         img {
             width: 100%;
             border-radius: 5px;
         }
-
-        p {
-            font-size: 16px;
-            color: #333;
-        }
-
-        footer {
-            background-color: #132620;
-            color: #f5ebd0;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Patek Effect Thumbnail Portfolio</h1>
-    <p>Check out all the thumbnails I've created</p>
-</header>
-
 <div class="container">
-    <!-- Repeat this block for each thumbnail -->
+    <!-- Thumbnail 1 -->
     <div class="thumbnail">
-        <img src="thumbnail1.jpg" alt="Thumbnail 1">
-        <p>Thumbnail 1 Description</p>
-    </div>
-    
-    <div class="thumbnail">
-        <img src="thumbnail2.jpg" alt="Thumbnail 2">
-        <p>Thumbnail 2 Description</p>
+        <img src="final.png" alt="Thumbnail 1">
     </div>
 
-    <!-- Add more thumbnail blocks as needed -->
+    <!-- Thumbnail 2 -->
+    <div class="thumbnail">
+        <img src="zodiac.png" alt="Thumbnail 2">
+    </div>
 </div>
-
-<footer>
-    <p>&copy; 2024 Patek Effect</p>
-</footer>
 
 </body>
 </html>
